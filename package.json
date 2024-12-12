@@ -1,19 +1,27 @@
 {
-  "name": "weather-journal-app",
+  "name": "udacity-weather-journal",
   "version": "1.0.0",
-  "description": "weather app ",
+  "description": "weather app for udacity by esmael mohamed",
   "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "body-parser": "^1.19.0",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Esmaelmohamed/Udacity-Weather-Journal.git"
+  },
+  "author": "esmaelmohamed",
   "license": "ISC",
-  "keywords": [],
-  "dependencies": {
-    "axios": "^0.21.1",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1"
-  }
+  "bugs": {
+    "url": "https://github.com/Esmaelmohamed/Udacity-Weather-Journal/issues"
+  },
+  "homepage": "https://github.com/Esmaelmohamed/Udacity-Weather-Journal#readme"
 }
