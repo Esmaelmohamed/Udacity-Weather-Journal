@@ -1,0 +1,163 @@
+/* Resetting padding and margin for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+.header {
+  background: linear-gradient(135deg, #45b3e0, #1d82a9);
+  padding: 8rem;
+  font-family: "Courier New", Courier, monospace, Oswald;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 5px solid #f9d71c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content Area */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+/* Individual Area Styling */
+.area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: "Courier New", Courier, monospace, Oswald;
+  background: rgba(50, 50, 50, 0.8);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.area:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Entry Box */
+.entry {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #323232, #484848);
+  padding: 1rem;
+  margin: 0.5rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.entry:hover {
+  background: linear-gradient(135deg, #484848, #323232);
+  transform: scale(1.05);
+}
+
+/* Labels */
+.area label {
+  margin: 0.5rem;
+  color: #f9d71c;
+  font-weight: bold;
+}
+
+/* Button Styling */
+#generate {
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: none;
+  font-weight: bold;
+  background: linear-gradient(135deg, #f9d71c, #f39c12);
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#generate:hover {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Content Styling */
+#date,
+#temp,
+#content,
+#entryHolder,
+.title {
+  padding: 10px;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Typing Animation */
+label {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Animated Sun */
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3em;
+  height: 3em;
+  margin: -1.5em;
+  background: radial-gradient(circle, #ffcc00, #ffa500);
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ffcc00, 0 0 30px #ffa500;
+  animation: spin 12s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
